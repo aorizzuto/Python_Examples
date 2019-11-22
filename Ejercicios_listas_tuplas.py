@@ -9,13 +9,13 @@ for i in range(num):
 
 print(lista)
 
------------------------
+"""
 Ingrese cantidad de asignaturas: 3
 Asignatura 1 matematica
 Asignatura 2 fisica
 Asignatura 3 historia
 ['matematica', 'fisica', 'historia']
------------------------
+"""
 
 # Escribir un programa que almacene las asignaturas de un curso (por ejemplo Matemáticas, Física, Química, Historia y Lengua) en una lista, pregunte al usuario la nota que ha sacado en cada asignatura, y después las muestre por pantalla con el mensaje En <asignatura> has sacado <nota> donde <asignatura> es cada una des las asignaturas de la lista y <nota> cada una de las correspondientes notas introducidas por el usuario
 # Conviene usar diccionario
@@ -30,7 +30,7 @@ for i in range(num):
 
 print(dicc)
 
------------------------
+"""
 Ingrese cantidad de asignaturas: 3
 Asignatura 1 historia
      Nota de historia: 7
@@ -39,7 +39,7 @@ Asignatura 2 matematica
 Asignatura 3 fisica
      Nota de fisica: 10
 {'historia': '7', 'matematica': '5', 'fisica': '10'}
------------------------
+"""
 
 # Escribir un programa que pregunte al usuario los números ganadores de la lotería primitiva, los almacene en una lista y los muestre por pantalla ordenados de menor a mayor.
 
@@ -57,7 +57,7 @@ if len(lista) > 0:
     print("Lista ordenada:")
     print(lista)
 
------------------------
+"""
 Ingrese numeros aleatoriamente (0 para salir): 6
 Ingrese numeros aleatoriamente (0 para salir): 18
 Ingrese numeros aleatoriamente (0 para salir): 4
@@ -69,8 +69,36 @@ Ingrese numeros aleatoriamente (0 para salir): 70
 Ingrese numeros aleatoriamente (0 para salir): 0
 Lista ordenada:
 [4, 6, 15, 18, 21, 23, 50, 70]
------------------------
+"""
 
+
+
+# Escribir un programa que almacene las asignaturas de un curso (por ejemplo Matemáticas, Física, Química, Historia y Lengua) en una lista, pregunte al usuario la nota que ha sacado en cada asignatura y elimine de la lista las asignaturas aprobadas. Al final el programa debe mostrar por pantalla las asignaturas que el usuario tiene que repetir.
+
+num=int(input("Ingrese cantidad de asignaturas:"))
+nota_aprobacion=int(input("Ingrese con que nota se aprueba:"))
+dicc={}
+
+for i in range(num):
+    asig=input("Asignatura {}".format(i+1))
+    nota=int(input("     Nota de {}:".format(asig)))
+    
+    if nota < nota_aprobacion:
+        dicc[asig]=nota
+        
+print(dicc)
+
+"""
+Ingrese cantidad de asignaturas: 3
+Ingrese con que nota se aprueba: 4
+Asignatura 1 Matematica
+     Nota de Matematica: 2
+Asignatura 2 Fisica
+     Nota de Fisica: 6
+Asignatura 3 Quimica
+     Nota de Quimica: 5
+{'Matematica': 2}
+"""
 
 
 
