@@ -1,4 +1,4 @@
-# Write a Python program which accepts the radius of a circle from the user and compute the area
+# 1) Write a Python program which accepts the radius of a circle from the user and compute the area
 
 radio = float(input("Ingrese radio: "))
 pi = 3.1415926
@@ -13,7 +13,7 @@ El area del circulo es:  28.2743334
 
 
 #####
-# Write a Python program which accepts the user's first and last name and print them in reverse order with a space between them
+# 2) Write a Python program which accepts the user's first and last name and print them in reverse order with a space between them
 
 ####### Función Inversa #########
 
@@ -41,3 +41,22 @@ Nombre:  Alejandro
 Apellido:  Fernandez
 zednanreF ordnajelA
 """
+
+
+
+
+# 3) Write a Python program which accepts a sequence of comma-separated numbers from user and generate a list and a tuple with those numbers
+
+seq=input("Ingrese numeros separados por coma: ")
+
+lista=seq.split(',')
+tupla=tuple(lista)
+
+print(lista,tupla)
+Ingrese numeros separados por coma:  3,1,5,2,4,7,6
+
+"""
+['3', '1', '5', '2', '4', '7', '6'] ('3', '1', '5', '2', '4', '7', '6')
+"""
+
+
