@@ -14,4 +14,24 @@ def remove_nums(int_list):
         len_list -= 1
     
 remove_nums(lst)
-    
+
+"""
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
+Se quito la: c
+['a', 'b', 'd', 'e', 'f', 'g', 'h', 'i']
+Se quito la: f
+['a', 'b', 'd', 'e', 'g', 'h', 'i']
+Se quito la: i
+['a', 'b', 'd', 'e', 'g', 'h']
+Se quito la: d
+['a', 'b', 'e', 'g', 'h']
+Se quito la: h
+['a', 'b', 'e', 'g']
+Se quito la: e
+['a', 'b', 'g']
+Se quito la: b
+['a', 'g']
+Se quito la: g
+['a']
+Se quito la: a
+"""
