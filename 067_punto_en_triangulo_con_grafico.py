@@ -97,7 +97,10 @@ p1=[float(lst[0]),float(lst[1])]   # x0,y0
 p2=[float(lst[2]),float(lst[3])]   # x1,y1
 p3=[float(lst[4]),float(lst[5])]   # x2,y2
 
-verificar_punto(p1,p2,p3,pto)
+if verificar_punto(p1,p2,p3,pto):
+    print("El punto se encuentra dentro del triangulo")
+else:
+    print("El punto se encuentra fuera del triangulo")
 
 
 
