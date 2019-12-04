@@ -33,16 +33,12 @@ def calculo_x_y(p_1,p_2):
 
 
 
-    
-def distancia_y(x,p1,p2)    
-    b = calc_b()
-    y = (y0/x0)*x2 + b                     # Ecuacion de la recta
-    
-    if y > min(y_list) and y < max(y_list):
-            return 1  
+def calcular_y(p1,p2,x):
+    x12=float(p2[0])-float(p1[0])   
+    y12=float(p2[1])-float(p1[1])   
         
-    return y
-
+    b12 = calc_b(p2,x12,y12)
+    return ((y12/x12)*x + b12)    # Ecuacion de la recta
 
 
 
@@ -62,17 +58,28 @@ def verificar_punto(p1,p2,p3,pto):
     if x < p1[0] or x > p3[0]:
         return 0
     else:
-        if p1 < p2[0]:
-            lugar = 1        # El punto esta entre p1 y p2
+        if x < p2[0]:
+            lugar = 1        # El punto esta entre p12 y p13
         else:
-            lugar = 2        # El punto esta entre p2 y p3
+            lugar = 2        # El punto esta entre p23 y p13
+    
+    
+    
     
     if lugar == 1:
-        return distancia_y(x,p1,p2,p3)     
+        
+        y_list = [calcular_y(p1,p2,x),calcular_y(p1,p3,x)]
+        
     else:
-        return distancia_y(x,p2,p3,p3) 
+        y_list = [calcular_y(p2,p3,x),calcular_y(p1,p3,x)]
     
     
+    y_list.sort()
+    
+    if y > min(y_list) and y < max(y_list):
+        return 1 
+    else:
+        return 0
 
     
     
@@ -90,7 +97,7 @@ p1=[float(lst[0]),float(lst[1])]   # x0,y0
 p2=[float(lst[2]),float(lst[3])]   # x1,y1
 p3=[float(lst[4]),float(lst[5])]   # x2,y2
 
-#verificar_punto(p1,p2,p3,pto)
+verificar_punto(p1,p2,p3,pto)
 
 
 
@@ -119,6 +126,4 @@ plt.grid()              # Habilito la grilla
 plt.xlim([0,5])         # Limites del eje X
 plt.ylim([0,5])         # Limites del eje Y
 plt.show()              # Habilito para mostrar el grafico
-
-
 
