@@ -1,4 +1,5 @@
 # Write a Python program to check if a point (x,y) is in a triangle or not. There is a triangle formed by three points
+# CON GRAFICO!!!
 
 import math
 import matplotlib.pyplot as plt
@@ -130,3 +131,9 @@ plt.xlim([0,5])         # Limites del eje X
 plt.ylim([0,5])         # Limites del eje Y
 plt.show()              # Habilito para mostrar el grafico
 
+
+"""
+Inserte 3 puntos (X1 X2 Y1 Y2 Z1 Z2): 1 1 4 1 2 4
+Inserte punto a verificar: 1 3
+El punto se encuentra fuera del triangulo
+"""
