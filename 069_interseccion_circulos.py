@@ -1,5 +1,5 @@
 # There are two circles C1 with radius r1, central coordinate (x1, y1) and C2 with radius r2 and central coordinate (x2, y2)
-# 2 3 2 6 5 3
+
 
 import math
 import matplotlib.pyplot as plt
@@ -51,3 +51,16 @@ lst = list(map(int,s.split()))
 
 grafico(lst)
 
+hip = math.sqrt((lst[3]-lst[0])**2 + (lst[4]-lst[1])**2)
+
+if hip < lst[2]-lst[5]:
+    print("C2  dentro de C1")
+elif hip < lst[5]-lst[2]:
+    print("C1  dentro de C2")
+elif hip > lst[2]+lst[5]:
+    print("Hay intersección")
+else:
+    print("No hay intersección entre las circunferencias")
+    
+
+# Prueba: 2 3 2 6 5 3
