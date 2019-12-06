@@ -6,9 +6,7 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 
-def paralelas(s):
-    lst = list(map(int,s.split()))
-
+def paralelas(lst):
     p1 = (lst[3]-lst[1])/(lst[2]-lst[0])
     p2 = (lst[7]-lst[5])/(lst[6]-lst[4])
 
@@ -68,7 +66,9 @@ def calculo_x_y(p_1,p_2):
 ### MAIN ###
     
 s = input("Inserte los 4 puntos de las 2 rectas separados por espacio (x1 y1 x2 y2 x3 y3 x4 y4):")
-par = paralelas(s)
+lst = list(map(int,s.split()))
+
+par = paralelas(lst)
 
 grafico(lst)
 
