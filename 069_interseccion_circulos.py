@@ -53,14 +53,19 @@ grafico(lst)
 
 hip = math.sqrt((lst[3]-lst[0])**2 + (lst[4]-lst[1])**2)
 
+print(hip,lst[2],lst[5])
+
 if hip < lst[2]-lst[5]:
     print("C2  dentro de C1")
 elif hip < lst[5]-lst[2]:
     print("C1  dentro de C2")
 elif hip > lst[2]+lst[5]:
-    print("Hay intersección")
-else:
     print("No hay intersección entre las circunferencias")
+else:
+    print("Hay intersección")
     
 
-# Prueba: 2 3 2 6 5 3
+# Prueba intersección: 2 3 2 6 5 3
+# Prueba sin interseccion: 2 3 2 6 5 2
+# Prueba C2 dentro de C1: 5 5 5 4 4 1
+# Prueba C1 dentro de C2: 4 4 1 5 5 5
