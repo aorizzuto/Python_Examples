@@ -10,4 +10,14 @@ l_min = sorted(l)
 lmax=''.join(l_max)
 lmin=''.join(l_min)
 
-print(a)
+dif = int(lmax)-int(lmin)
+print("Max:",lmax)
+print("Min:",lmin)
+print("Diff:",dif)
+
+"""
+Ingrese un numero: 12341
+Max: 43211
+Min: 11234
+Diff: 31977
+"""
