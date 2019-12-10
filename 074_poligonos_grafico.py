@@ -11,8 +11,7 @@ import numpy as np
 ### Calculo b de la ecuación de la recta ###
 
 def calc_b(p,x,y):
-    return (p[1] - (y/x)*p[0])
-
+        return (p[1] - (y/x)*p[0])
 
 
 
@@ -23,24 +22,17 @@ def calc_b(p,x,y):
 def calculo_x_y(p_1,p_2):
     x=float(p_1[0])-float(p_2[0])   # Distancia entre puntos x0 y x1
     y=float(p_1[1])-float(p_2[1])   # Distancia entre puntos y0 y y1
-
-    b = calc_b(p_1,x,y)
-    x2 = np.linspace(p_1[0],p_2[0],100)   # 100 Puntos entre x0 y x1
-    y2 = (y/x)*x2 + b                     # Ecuacion de la recta
     
+    if x == 0:
+        b = 0
+        y2 = np.linspace(p_1[1],p_2[1],100)
+        x2 = [p_1[0]]*len(y2)
+    else:
+        b = calc_b(p_1,x,y)
+        x2 = np.linspace(p_1[0],p_2[0],100)   # 100 Puntos entre x0 y x1
+        y2 = (y/x)*x2 + b                     # Ecuacion de la recta
+   
     return x2,y2
-
-
-
-
-
-def calcular_y(p1,p2,x):
-    x12=float(p2[0])-float(p1[0])   
-    y12=float(p2[1])-float(p1[1])   
-        
-    b12 = calc_b(p2,x12,y12)
-    return ((y12/x12)*x + b12)    # Ecuacion de la recta
-
 
 
 
