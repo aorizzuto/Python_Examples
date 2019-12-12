@@ -19,3 +19,9 @@ else:
 Escriba una palabra: Sebastianaitsabes
 SEBASTIANAITSABES es un palindromo
 """
+
+
+######## OTRA FORMA ##########
+
+def es_palindromo(txt):
+	return txt == txt[::-1]
