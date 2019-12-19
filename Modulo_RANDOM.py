@@ -75,7 +75,7 @@ print("\nRandom():",random.random())
 print("\nUniform(min:1.2,max:2.5):",random.uniform(1.2,2.5))
 
     # TRIANGULAR
-print("\nTriangular(low:1,high:2,mode:1.5)",random.triangular(1,2,1.5))
+print("\nTriangular(low:1,high:2,mas cerca de:1):",random.triangular(1,2,1))
 
 """
 Guardé el estado:
@@ -108,5 +108,5 @@ Random(): 0.45089932715349834
 
 Uniform(min:1.2,max:2.5): 1.268337621198389
 
-Triangular(low:1,high:2,mode:0) 1.0792895723041276
+Triangular(low:1,high:2,mas cerca de:1): 1.0792895723041276
 """
