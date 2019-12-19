@@ -77,6 +77,8 @@ print("\nUniform(min:1.2,max:2.5):",random.uniform(1.2,2.5))
     # TRIANGULAR
 print("\nTriangular(low:1,high:2,mas cerca de:1):",random.triangular(1,2,1))
 
+    # DISTRIBUCION BETA
+print("\nDistribución Beta - betavariate(2,5):",random.betavariate(2,5))
 """
 Guardé el estado:
 [16, 2, 13, 1, 11, 8, 19, 3, 6, 12]
@@ -109,4 +111,6 @@ Random(): 0.45089932715349834
 Uniform(min:1.2,max:2.5): 1.268337621198389
 
 Triangular(low:1,high:2,mas cerca de:1): 1.0792895723041276
+
+Distribución Beta - betavariate(2,5): 0.11933032947270282
 """
