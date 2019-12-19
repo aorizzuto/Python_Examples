@@ -79,6 +79,21 @@ print("\nTriangular(low:1,high:2,mas cerca de:1):",random.triangular(1,2,1))
 
     # DISTRIBUCION BETA
 print("\nDistribución Beta - betavariate(2,5):",random.betavariate(2,5))
+
+    # DISTRIBUCION EXPONENCIAL
+print("\nDistribución Exponencial - expovariate(2):",random.expovariate(2))
+
+
+
+
+
+
+
+
+
+
+
+
 """
 Guardé el estado:
 [16, 2, 13, 1, 11, 8, 19, 3, 6, 12]
@@ -113,4 +128,6 @@ Uniform(min:1.2,max:2.5): 1.268337621198389
 Triangular(low:1,high:2,mas cerca de:1): 1.0792895723041276
 
 Distribución Beta - betavariate(2,5): 0.11933032947270282
+
+Distribución Exponencial - expovariate(2): 0.42615910897006665
 """
