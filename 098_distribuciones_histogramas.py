@@ -2,7 +2,7 @@ import random
 import numpy as np
 import matplotlib.pyplot as plt
 
-datos=10000
+datos=100000
 
 mu = 100 # Media de la distribución
 sigma = 15 # desviacion estandar
@@ -13,24 +13,33 @@ x = [random.uniform(0,3) for i in range(0,datos)]
 
 ### UNIFORM ### 
 
-g = plt.figure(1)
-
-plt.title('Histograma')
+x = [random.uniform(0,3) for i in range(0,datos)]
+a = plt.figure(1)
+plt.title('Uniforme')
 plt.xlabel('Datos')
-
 n, bins, patches = plt.hist(x, bins='auto')
-g.show()
+a.show()
+
+### TRIANGULAR ### 
+
+x = [random.triangular(0,3,1) for i in range(0,datos)]
+b = plt.figure(2)
+plt.title('Triangular')
+plt.xlabel('Datos')
+n, bins, patches = plt.hist(x, bins='auto')
+b.show()
+
+### DISTRIBUCION BETA ### 
+
+x = [random.betavariate(mu,sigma) for i in range(0,datos)]
+b = plt.figure(3)
+plt.title('Distribucion Beta')
+plt.xlabel('Datos')
+n, bins, patches = plt.hist(x, bins='auto')
+b.show()
+
 
 """
-    # UNIFORM
-print("\nUniform(min:1.2,max:2.5):",random.uniform(1.2,2.5))
-
-    # TRIANGULAR
-print("\nTriangular(low:1,high:2,mas cerca de:1):",random.triangular(1,2,1))
-
-    # DISTRIBUCION BETA
-print("\nDistribución Beta - betavariate(2,5):",random.betavariate(2,5))
-
     # DISTRIBUCION EXPONENCIAL
 print("\nDistribución Exponencial - expovariate(2):",random.expovariate(2))
 
