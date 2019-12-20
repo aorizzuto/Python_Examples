@@ -83,7 +83,26 @@ print("\nDistribución Beta - betavariate(2,5):",random.betavariate(2,5))
     # DISTRIBUCION EXPONENCIAL
 print("\nDistribución Exponencial - expovariate(2):",random.expovariate(2))
 
+    # DISTRIBUCION GAMMA
+print("\nDistribución Gamma - gammavariate(alpha:1,beta:3):",random.gammavariate(1,3))
 
+    # DISTRIBUCION GAUSS
+print("\nDistribución Gamma - gauss(mu:1,sigma:3):",random.gauss(1,3))
+
+    # DISTRIBUCION LOG
+print("\nDistribución Log - gauss(mu:1,sigma:3):",random.lognormvariate(1, 3))
+
+    # DISTRIBUCION NORMAL
+print("\nDistribución Normal - gauss(mu:1,sigma:3):",random.normalvariate(1, 3))
+
+    # DISTRIBUCION 
+print("\nDistribución Vonmises - gauss(mu:1,kappa:3):",random.vonmisesvariate(1, 3))
+
+    # DISTRIBUCION PARETO
+print("\nDistribución Pareto - gauss(alpha:1):",random.paretovariate(1))
+
+    # DISTRIBUCION WEIBULL
+print("\nDistribución Weibull - gauss(alpha:1,beta:3):",random.weibullvariate(1, 3))
 
 
 
@@ -130,4 +149,18 @@ Triangular(low:1,high:2,mas cerca de:1): 1.0792895723041276
 Distribución Beta - betavariate(2,5): 0.11933032947270282
 
 Distribución Exponencial - expovariate(2): 0.42615910897006665
+
+Distribución Gamma - gammavariate(alpha:1,beta:3): 5.4593025051283055
+
+Distribución Gamma - gauss(mu:1,sigma:3): 0.7264765186877808
+
+Distribución Log - gauss(mu:1,sigma:3): 19.842793992182138
+
+Distribución Normal - gauss(mu:1,sigma:3): 2.038581137814786
+
+Distribución Vonmises - gauss(mu:1,kappa:3): 1.5531342843611993
+
+Distribución Pareto - gauss(alpha:1): 1.4111196126979926
+
+Distribución Weibull - gauss(alpha:1,beta:3): 1.0078672935069248
 """
